@@ -1,0 +1,2 @@
+conda activate vllm
+accelerate launch ./annotate_data/get_rewards.py --reward_name_or_path SiliangZ/RM_Mistral_sft_init_ultrafeedbck_lr_5e6 --dataset_name_or_path ./data/gen_data.jsonl --output_dir ./data/data_with_rewards.jsonl --K 4
